@@ -19,9 +19,8 @@ function limpiarCaja(){
 
 function mostrarNombres() {
     let amigo = buscarID('listaAmigos');
-    let tamañoDeLista = amigos.length;
     amigo.innerHTML = '';
-    for (let i = 0; i < tamañoDeLista; i++) {
+    for (let i = 0; i < amigos.length; i++) {
         amigo.innerHTML +='<li>'+amigos[i]+'</li>';
     }
     return;
@@ -36,6 +35,7 @@ function sortearAmigo() {
     } else {
         alert('No ha ingresado ningún nombre');
     }
+    return;
 }
 
 function buscarID(id) {
